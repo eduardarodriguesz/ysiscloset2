@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ysis Closet — Brechó Online com curadoria vintage, elegante e atemporal. Peças únicas com história." />
+  <title>Ysis Closet | Brechó Online & Curadoria Vintage</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body class="light-theme">
+  <!-- ===== PROGRESS BAR ===== -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-bar"></div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+
+      <!-- Logo SVG -->
+      <a href="#" class="navbar__logo" id="logo-link" aria-label="Ysis Closet - Início">
+        <svg class="logo-svg" viewBox="0 0 260 70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ysis Closet Logo">
+          <defs>
+            <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#a71b0c;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#641006;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <text x="0" y="34" font-family="Cormorant Garamond, serif" font-size="32" font-weight="600" letter-spacing="6" fill="currentColor">YSIS</text>
+          <text x="0" y="56" font-family="Montserrat, sans-serif" font-size="13" font-weight="300" letter-spacing="10" fill="currentColor" opacity="0.6">CLOSET</text>
+          <line x1="0" y1="62" x2="110" y2="62" stroke="url(#redGrad)" stroke-width="1.5" />
+        </svg>
+      </a>
+
+      <!-- Nav Links (Centered) -->
+      <nav class="navbar__nav" id="nav-menu" role="navigation" aria-label="Menu principal">
+        <ul class="navbar__list">
+          <li><a href="#colecoes" class="navbar__link" id="nav-colecoes">Coleções</a></li>
+          <li><a href="#destaque" class="navbar__link" id="nav-destaque">Destaque</a></li>
+          <li><a href="#lookbook" class="navbar__link" id="nav-lookbook">Lookbook</a></li>
+          <li><a href="#sobre" class="navbar__link" id="nav-sobre">Sobre</a></li>
+          <li class="mobile-only"><a href="#contato" class="navbar__link navbar__link--cta" id="nav-contato-mobile">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navbar Actions (Right) -->
+      <div class="navbar__actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar Tema" title="Alternar Tema">
+          <img src="img/icon-moon.png" alt="Icone de Tema" class="theme-toggle__icon" id="theme-icon">
+        </button>
+        <a href="#contato" class="navbar__link navbar__link--cta" id="nav-contato">Contato</a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar__toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero" aria-label="Seção principal">
+      <div class="hero__content">
+        <span class="hero__eyebrow reveal">Garimpos Únicos & Curadoria</span>
+        <h1 class="hero__title reveal reveal--delay-1">
+          A Arte de <br />
+          <em>Dar Nova Vida</em><br />
+          ao Estilo
+        </h1>
+        <p class="hero__subtitle reveal reveal--delay-2">
+          Peças com alma que definem sua personalidade.<br />
+          Descubra o melhor da moda circular em uma curadoria selecionada a dedo.
+        </p>
+        <div class="hero__actions reveal reveal--delay-3">
+          <a href="#estilos" class="btn btn--primary" id="hero-cta-primary">Explorar Estilos</a>
+          <a href="#combinacoes" class="btn btn--ghost" id="hero-cta-ghost">Ver Combinações</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAIXA DESLIZANTE ===== -->
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker">
+        <span>Garimpos Únicos</span><span class="ticker__dot">✦</span>
+        <span>Vintage Curadoria</span><span class="ticker__dot">✦</span>
+        <span>Moda Circular</span><span class="ticker__dot">✦</span>
+        <span>Ysis Closet</span><span class="ticker__dot">✦</span>
+        <span>Garimpos Únicos</span><span class="ticker__dot">✦</span>
+        <span>Vintage Curadoria</span><span class="ticker__dot">✦</span>
+        <span>Moda Circular</span><span class="ticker__dot">✦</span>
+        <span>Ysis Closet</span><span class="ticker__dot">✦</span>
+      </div>
+    </div>
+
+    <!-- ===== COLEÇÕES ===== -->
+    <section class="collections" id="colecoes" aria-labelledby="collections-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Combinações do Acervo</span>
+          <h2 class="section-title" id="collections-title">Curadoria de Looks</h2>
+          <p class="section-sub">Explorar o acervo é descobrir histórias. Nossas combinações mostram o potencial de cada peça única.</p>
+        </div>
+        <div class="collections__grid">
+
+          <article class="col-card reveal" id="card-noturna" tabindex="0" aria-label="Curadoria Noites Vintage">
+            <div class="col-card__img col-img--noturna">
+              <div class="col-card__overlay"></div>
+              <span class="col-card__tag">Peça Única</span>
+            </div>
+            <div class="col-card__body">
+              <h3 class="col-card__title">Noites Vintage</h3>
+              <p class="col-card__desc">Looks compostos para brilhar com o charme de outras décadas.</p>
+              <a href="#" class="col-card__link" id="link-noturna">Explorar Garimpos →</a>
+            </div>
+          </article>
+
+          <article class="col-card col-card--featured reveal reveal--delay-1" id="card-scarlet" tabindex="0" aria-label="Acervo Scarlet">
+            <div class="col-card__img col-img--scarlet">
+              <div class="col-card__overlay"></div>
+              <span class="col-card__tag col-card__tag--red">Destaque do Acervo</span>
+            </div>
+            <div class="col-card__body">
+              <h3 class="col-card__title">Vermelho Retrô</h3>
+              <p class="col-card__desc">A vibração do vermelho em peças que atravessam o tempo.</p>
+              <a href="#" class="col-card__link" id="link-scarlet">Ver Combinações →</a>
+            </div>
+          </article>
+
+          <article class="col-card reveal reveal--delay-2" id="card-branca" tabindex="0" aria-label="Curadoria Tons Atemporais">
+            <div class="col-card__img col-img--branca">
+              <div class="col-card__overlay"></div>
+              <span class="col-card__tag">Vintage Clássico</span>
+            </div>
+            <div class="col-card__body">
+              <h3 class="col-card__title">Tons Atemporais</h3>
+              <p class="col-card__desc">O minimalismo eterno em curadorias de tons claros e imaculados.</p>
+              <a href="#" class="col-card__link" id="link-branca">Descobrir Tesouros →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DESTAQUE ===== -->
+    <section class="featured" id="destaque" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="featured__inner">
+          <div class="featured__visual reveal">
+            <div class="featured__img-wrap">
+              <div class="featured__img feat-img-main"></div>
+              <div class="featured__img-accent feat-img-accent"></div>
+            </div>
+            <div class="featured__tag-float">
+              <span>🔥 Mais Vendida</span>
+            </div>
+          </div>
+          <div class="featured__content reveal reveal--delay-1">
+            <span class="section-tag">Garimpo em Destaque</span>
+            <h2 class="section-title" id="featured-title">Blazer Noir Atemporal</h2>
+            <p class="featured__desc">
+              Um garimpo que atravessa décadas. Esse blazer noir carrega a história de uma alfaiataria
+              impecável, agora pronto para compor o seu acervo pessoal com autenticidade.
+            </p>
+            <ul class="featured__details" aria-label="Detalhes do produto">
+              <li><span class="detail-dot"></span> Tecido acetinado de alta qualidade</li>
+              <li><span class="detail-dot"></span> Disponível em P, M, G e GG</li>
+              <li><span class="detail-dot"></span> Corte exclusivo Ysis Closet</li>
+              <li><span class="detail-dot"></span> Frete grátis para todo o Brasil</li>
+            </ul>
+            <div class="featured__price-row">
+              <span class="price">R$ 489,90</span>
+              <span class="price-old">R$ 680,00</span>
+              <span class="price-badge">-28%</span>
+            </div>
+            <a href="#contato" class="btn btn--primary" id="featured-cta">Quero Esta Peça</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUTOS ===== -->
+    <section class="products" id="produtos" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Acervo Selecionado</span>
+          <h2 class="section-title" id="products-title">Tesouros Recém-Chegados</h2>
+        </div>
+        <div class="products__grid">
+
+          <article class="prod-card reveal" id="prod-1" tabindex="0">
+            <div class="prod-card__img pimg-1">
+              <button class="prod-card__fav" aria-label="Favoritar produto 1" id="fav-1">♡</button>
+            </div>
+            <div class="prod-card__info">
+              <span class="prod-card__cat">Vestidos</span>
+              <h3 class="prod-card__name">Vestido Midi Encanto</h3>
+              <div class="prod-card__price-row">
+                <span class="prod-card__price">R$ 329,90</span>
+                <button class="prod-card__btn" id="btn-prod-1">Detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="prod-card reveal reveal--delay-1" id="prod-2" tabindex="0">
+            <div class="prod-card__img pimg-2">
+              <button class="prod-card__fav" aria-label="Favoritar produto 2" id="fav-2">♡</button>
+            </div>
+            <div class="prod-card__info">
+              <span class="prod-card__cat">Conjuntos</span>
+              <h3 class="prod-card__name">Conjunto Rouge Luxo</h3>
+              <div class="prod-card__price-row">
+                <span class="prod-card__price">R$ 549,90</span>
+                <button class="prod-card__btn" id="btn-prod-2">Detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="prod-card reveal reveal--delay-2" id="prod-3" tabindex="0">
+            <div class="prod-card__img pimg-3">
+              <button class="prod-card__fav" aria-label="Favoritar produto 3" id="fav-3">♡</button>
+            </div>
+            <div class="prod-card__info">
+              <span class="prod-card__cat">Blusas</span>
+              <h3 class="prod-card__name">Blusa Seda Premium</h3>
+              <div class="prod-card__price-row">
+                <span class="prod-card__price">R$ 189,90</span>
+                <button class="prod-card__btn" id="btn-prod-3">Detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="prod-card reveal reveal--delay-3" id="prod-4" tabindex="0">
+            <div class="prod-card__img pimg-4">
+              <button class="prod-card__fav" aria-label="Favoritar produto 4" id="fav-4">♡</button>
+            </div>
+            <div class="prod-card__info">
+              <span class="prod-card__cat">Calças</span>
+              <h3 class="prod-card__name">Calça Alfaiataria Supreme</h3>
+              <div class="prod-card__price-row">
+                <span class="prod-card__price">R$ 399,90</span>
+                <button class="prod-card__btn" id="btn-prod-4">Detalhes</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LOOKBOOK ===== -->
+    <section class="lookbook" id="lookbook" aria-labelledby="lookbook-title">
+      <div class="lookbook__header reveal">
+        <span class="section-tag">Combinações</span>
+        <h2 class="section-title" id="lookbook-title">Acervo no Lookbook</h2>
+        <p class="section-sub">Veja como dar vida nova aos nossos tesouros vintage com combinações cheias de atitude.</p>
+      </div>
+      <div class="lookbook__mosaic">
+        <div class="look-item look-item--tall reveal" id="look-1">
+          <div class="look-item__img lk-img-1"></div>
+          <div class="look-item__caption">Look Noturno</div>
+        </div>
+        <div class="look-item reveal reveal--delay-1" id="look-2">
+          <div class="look-item__img lk-img-2"></div>
+          <div class="look-item__caption">Look Scarlet</div>
+        </div>
+        <div class="look-item reveal reveal--delay-2" id="look-3">
+          <div class="look-item__img lk-img-3"></div>
+          <div class="look-item__caption">Look Casual Chique</div>
+        </div>
+        <div class="look-item look-item--wide reveal reveal--delay-3" id="look-4">
+          <div class="look-item__img lk-img-4"></div>
+          <div class="look-item__caption">Look Atemporal</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="about" id="sobre" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__content reveal">
+            <span class="section-tag">Nossa Alma Circular</span>
+            <h2 class="section-title" id="about-title">Apaixonadas por Histórias</h2>
+            <p class="about__text">
+              A Ysis Closet nasceu do desejo de dar novo fôlego a peças extraordinárias. Acreditamos que
+              a moda circular é o futuro: cada garimpo em nosso acervo é uma oportunidade de expressar
+              seu estilo de forma única e sustentável.
+            </p>
+            <p class="about__text">
+              Nossa curadoria une o charme do vintage com a estética contemporânea, criando um acervo
+              onde cada peça é um tesouro esperando para continuar sua jornada com você.
+            </p>
+            <div class="about__stats" role="list" aria-label="Estatísticas da empresa">
+              <div class="about__stat" role="listitem">
+                <span class="stat-num">5+</span>
+                <span class="stat-label">Anos de Experiência</span>
+              </div>
+              <div class="about__stat" role="listitem">
+                <span class="stat-num">12k</span>
+                <span class="stat-label">Clientes Satisfeitas</span>
+              </div>
+              <div class="about__stat" role="listitem">
+                <span class="stat-num">200+</span>
+                <span class="stat-label">Peças Exclusivas</span>
+              </div>
+            </div>
+          </div>
+          <div class="about__visual reveal reveal--delay-1" aria-hidden="true">
+            <div class="about__img-wrap">
+              <div class="about__img about-img"></div>
+              <div class="about__quote-card">
+                <span class="quote-mark">"</span>
+                <p>Moda é a armadura para sobreviver à realidade da vida cotidiana.</p>
+                <cite>— Ysis Closet</cite>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DEPOIMENTOS ===== -->
+    <section class="testimonials" id="depoimentos" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Depoimentos</span>
+          <h2 class="section-title" id="testimonials-title">O que Nossas Clientes Dizem</h2>
+        </div>
+        <div class="testimonials__track" id="testimonials-track" role="region" aria-label="Depoimentos de clientes">
+
+          <div class="testi-card" id="testi-1" role="article">
+            <div class="testi-card__stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testi-card__text">"Comprei o vestido Noturno para meu aniversário e recebi elogios a noite toda. A qualidade é incrível!"</p>
+            <div class="testi-card__author">
+              <div class="testi-avatar av-1" aria-hidden="true"></div>
+              <div>
+                <strong>Ana Carolina</strong>
+                <span>São Paulo, SP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card" id="testi-2" role="article">
+            <div class="testi-card__stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testi-card__text">"Finalmente encontrei uma loja que entende o que é elegância de verdade. Ysis Closet é diferente!"</p>
+            <div class="testi-card__author">
+              <div class="testi-avatar av-2" aria-hidden="true"></div>
+              <div>
+                <strong>Mariana Souza</strong>
+                <span>Rio de Janeiro, RJ</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card" id="testi-3" role="article">
+            <div class="testi-card__stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testi-card__text">"O Conjunto Rouge Luxo chegou em 2 dias, embalagem linda e o tecido é maravilhoso. Amei demais!"</p>
+            <div class="testi-card__author">
+              <div class="testi-avatar av-3" aria-hidden="true"></div>
+              <div>
+                <strong>Beatriz Lima</strong>
+                <span>Belo Horizonte, MG</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="testimonials__dots" role="tablist" aria-label="Navegação dos depoimentos">
+          <button class="dot dot--active" id="dot-0" role="tab" aria-selected="true" aria-controls="testi-1"></button>
+          <button class="dot" id="dot-1" role="tab" aria-selected="false" aria-controls="testi-2"></button>
+          <button class="dot" id="dot-2" role="tab" aria-selected="false" aria-controls="testi-3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO / NEWSLETTER ===== -->
+    <section class="contact" id="contato" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__inner reveal">
+          <span class="section-tag">Fique por Dentro</span>
+          <h2 class="section-title" id="contact-title">Receba as Novidades em Primeira Mão</h2>
+          <p class="contact__sub">Cadastre seu e-mail e tenha acesso a lançamentos exclusivos, promoções especiais e conteúdos de moda direto na sua caixa de entrada.</p>
+          <form class="contact__form" id="newsletter-form" novalidate aria-label="Formulário de newsletter">
+            <div class="form-group">
+              <input
+                type="text"
+                id="input-nome"
+                name="nome"
+                placeholder="Seu nome"
+                class="form-input"
+                autocomplete="given-name"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="input-email"
+                name="email"
+                placeholder="Seu melhor e-mail"
+                class="form-input"
+                autocomplete="email"
+                required
+                aria-required="true"
+              />
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="form-submit">
+              Quero Receber Novidades
+            </button>
+          </form>
+          <p class="contact__privacy">Seus dados estão seguros. Não enviamos spam. ✓</p>
+          <div class="contact__success" id="form-success" aria-live="polite" role="alert" hidden>
+            <span>🎉</span>
+            <p>Pronto! Você está na nossa lista VIP. Fique de olho no seu e-mail!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <svg class="logo-svg logo-svg--small" viewBox="0 0 260 70" xmlns="http://www.w3.org/2000/svg" aria-label="Ysis Closet">
+            <defs>
+              <linearGradient id="redGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#c0392b;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <text x="0" y="34" font-family="Cormorant Garamond, serif" font-size="32" font-weight="600" letter-spacing="6" fill="currentColor">YSIS</text>
+            <text x="0" y="56" font-family="Montserrat, sans-serif" font-size="13" font-weight="300" letter-spacing="10" fill="currentColor" opacity="0.6">CLOSET</text>
+            <line x1="0" y1="62" x2="110" y2="62" stroke="url(#redGrad2)" stroke-width="1.5" />
+          </svg>
+          <p class="footer__tagline">Curadoria vintage & Moda circular.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Links do rodapé">
+          <div class="footer__col">
+            <h4 class="footer__col-title">Explorar</h4>
+            <ul>
+              <li><a href="#colecoes" id="footer-colecoes">Coleções</a></li>
+              <li><a href="#destaque" id="footer-destaque">Destacados</a></li>
+              <li><a href="#lookbook" id="footer-lookbook">Lookbook</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">Informações</h4>
+            <ul>
+              <li><a href="#sobre" id="footer-sobre">Sobre Nós</a></li>
+              <li><a href="#" id="footer-envio">Envio & Trocas</a></li>
+              <li><a href="#" id="footer-privacidade">Privacidade</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 class="footer__col-title">Siga-nos</h4>
+            <ul>
+              <li><a href="#" id="footer-insta">Instagram</a></li>
+              <li><a href="#" id="footer-tiktok">TikTok</a></li>
+              <li><a href="#" id="footer-pinterest">Pinterest</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Ysis Closet. Todos os direitos reservados.</p>
+        <p>Feito com <span style="color: var(--red)">♥</span> para mulheres que admiram o belo.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
